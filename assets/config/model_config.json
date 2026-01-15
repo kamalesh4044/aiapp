@@ -1,0 +1,37 @@
+{
+  "app_name": "AI Offline",
+  "version": "1.0.0",
+  "models": [
+    {
+      "name": "chat_model",
+      "file": "chat_model.tflite",
+      "size_mb": 50,
+      "version": "1.0",
+      "quantized": true
+    },
+    {
+      "name": "image_gen_model",
+      "file": "image_gen_model.tflite",
+      "size_mb": 100,
+      "version": "1.0",
+      "quantized": true
+    }
+  ],
+  "features": {
+    "offline_mode": true,
+    "image_generation": true,
+    "chat": true,
+    "image_upload": true,
+    "history": true
+  },
+  "android_config": {
+    "min_api_level": 21,
+    "target_api_level": 33,
+    "permissions": [
+      "INTERNET",
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "CAMERA"
+    ]
+  }
+}

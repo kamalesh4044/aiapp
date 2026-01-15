@@ -1,0 +1,70 @@
+name: ai_offline_app
+description: A lightweight AI assistant app with offline capabilities including chatbot and image generation.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.0.0
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+
+  # Local Storage & Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # ML & AI
+  image: ^4.0.0
+  
+  # Image Processing
+  image_picker: ^1.0.0
+  cached_network_image: ^3.3.0
+
+  # UI & Theming
+  google_fonts: ^6.1.0
+  flutter_screenutil: ^5.9.0
+  get_it: ^7.6.0
+  
+  # Networking & API
+  http: ^1.1.0
+  dio: ^5.3.0
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  permission_handler: ^11.4.0
+  path_provider: ^2.1.0
+  
+  # State Serialization
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.6
+  freezed: ^2.4.1
+  json_serializable: ^6.7.0
+  hive_generator: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/models/
+    - assets/config/

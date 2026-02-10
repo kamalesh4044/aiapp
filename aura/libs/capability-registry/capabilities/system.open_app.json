@@ -1,0 +1,13 @@
+{
+  "capability_id": "system.open_app",
+  "service": "totalsystemcontrol",
+  "supported_os": ["windows", "macos", "linux-x11"],
+  "risk_tier": "low",
+  "preconditions": ["app_installed"],
+  "primary_method": "native_api",
+  "fallback_methods": ["accessibility", "vision_click"],
+  "verification_strategy": "window_title_match",
+  "timeout_ms": 8000,
+  "max_retries": 2,
+  "confidence_score": 0.93
+}

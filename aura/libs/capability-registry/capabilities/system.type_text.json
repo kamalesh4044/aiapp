@@ -1,0 +1,13 @@
+{
+  "capability_id": "system.type_text",
+  "service": "totalsystemcontrol",
+  "supported_os": ["windows", "macos", "linux-x11", "linux-wayland"],
+  "risk_tier": "medium",
+  "preconditions": ["focused_input_field"],
+  "primary_method": "native_api",
+  "fallback_methods": ["accessibility"],
+  "verification_strategy": "vision_text_confirmation",
+  "timeout_ms": 5000,
+  "max_retries": 1,
+  "confidence_score": 0.9
+}
